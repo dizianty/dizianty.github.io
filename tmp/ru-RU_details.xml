@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.5.0.6</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/20243/163055/ru-RU_joomla_lang_full_3.5.0v6.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.5.0.5</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/20243/163054/ru-RU_joomla_lang_full_3.5.0v5.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.6.2.3</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/20372/163795/ru-RU_joomla_lang_full_3.6.2v3.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.6.2.2</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/20372/163423/ru-RU_joomla_lang_full_3.6.2v2.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.6.2.1</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/20372/163420/ru-RU_joomla_lang_full_3.6.2v1.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.7.0.1</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/20502/163833/ru-RU_joomla_lang_full_3.7.0v1.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.3.6.2</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/17565/161876/ru-RU_joomla_lang_full_3.3.6v2.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.4.1.3</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/17565/162357/ru-RU_joomla_lang_full_3.4.1v3.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+  <update>
+    <name>Russian</name>
+    <description>Russian Translation of Joomla!</description>
+    <element>pkg_ru-RU</element>
+    <type>package</type>
+    <version>3.4.1.2</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlacode.org/gf/download/frsrelease/17565/162335/ru-RU_joomla_lang_full_3.4.1v2.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.[01234567]"/>
+  </update>
+</updates>
