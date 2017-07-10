@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Задание</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+
+    </div>
+
+    <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js"></script>
+    <script type="text/babel">
+        var { Router,
+              Route,
+              IndexRoute,
+              IndexLink,
+              hashHistory,
+              Link } = ReactRouter;
+        var destination = document.querySelector("#container");
+        var App = React.createClass({
+            render: function() {
+                return (
+                    <div className="page">
+                        <div className="top">
+                            <h1 className="title">Биография</h1>
+                        </div>
+                        <nav className="menu">
+                            <ul className="menu__list">
+                                <li className="menu__list-item">
+                                    <IndexLink className="link menu__link" to="/" activeClassName="active">Главная</IndexLink>
+                                </li>
+                                <li className="menu__list-item">
+                                    <Link className="link menu__link" to="/abilities" activeClassName="active">Навыки</Link>
+                                </li>
+                                <li className="menu__list-item">
+                                    <Link className="link menu__link" to="/contacts" activeClassName="active">Контакты</Link>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div className="content">
+                            {this.props.children}
+                        </div>
+                    </div>
+                )
+            }
+        });
+        var Home = React.createClass({
+            render: function() {
+                return (
+                    <div className="section home">
+                        <header className="section__header">
+                            <h2 className="title section__title">Всем привет</h2>
+                        </header>
+                        <div className="section__content home__content">
+                            <img className="home__logo" src="images/logo.jpg" alt="logo"></img>
+                            <div className="home__data">
+                                <h3 className="title home__title">
+                                    <span className="home__title-name">Фоломеев Егор</span>
+                                    <span className="home__title-info">Студент 4 курса ФВТ кафедра ВТ</span>
+                                </h3>
+                                <div className="home__text">
+                                    <p>Немного расскажу о своей жизни. Учился в 13 гимназии. В свободное время занимался баскетболом, что принесло свои плоды в университете, с первого курса стал играть на соревнованиях за свою специальность, после за факультет. В этом году окончил 4 года обучения. Сейчас думаю поступать в магистратуру. Увлекаться версткой стал полгода назад. Так как в университете не было предметов, связанных с web-программированием, стал искать информацию в сети. К середине учебного года записался на курсы по верстке.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        });
+        var Abilities = React.createClass({
+            render: function() {
+                return (
+                    <div className="section abilities">
+                        <header className="section__header">
+                            <h2 className="title section__title">Что же я умею</h2>
+                        </header>
+                        <div className="section__content abilities__content">
+                            <div className="abilities__text">
+                                <p>Занимаюсь в этом направлении около 3 месяцев. За это время достиг определенного уровня. </p>
+                                <p>На данный момент я всё больше увлекаюсь web-программированием. Прокачиваю свои навыки и пытаюсь найти им практическое применение. С написанием spa сайта сталкиваюсь в первый раз. Всё новое поначалу всегда вводит в ступор, а со временем начинаешь вникать и понимаешь, что не всё так плохо.
+                                </p>
+                            </div>
+                            <div className="abilities__stats">
+                                <div className="progress abilities__stats-item">
+                                    <span className="progress__name">HTML</span>
+                                    <div className="progress__bar progress__bar_first"></div>
+                                </div>
+                                <div className="progress abilities__stats-item">
+                                    <span className="progress__name">CSS</span>
+                                    <div className="progress__bar progress__bar_second"></div>
+                                </div>
+                                <div className="progress abilities__stats-item">
+                                    <span className="progress__name">JS</span>
+                                    <div className="progress__bar progress__bar_third"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        });
+        var Contacts = React.createClass({
+            render: function() {
+                return (
+                    <div className="section contacts">
+                        <header className="section__header">
+                            <h2 className="title section__title">Как можно меня найти</h2>
+                        </header>
+                        <div className="section__content contacts__content">
+                            <div className="contacts__item">
+                                <img className="contacts__img" src="images/phone.png" alt="phone"></img>
+                                <a className="link contacts__link" href="tel:89875185874">Телефон: 89875185874</a>
+                            </div>
+                            <div className="contacts__item">
+                                <img className="contacts__img" src="images/email.png" alt="mail"></img>
+                                <a className="link contacts__link" href="mailto:folomeev-egor@mail.ru">Почта: folomeev-egor@mail.ru</a>
+                            </div>
+                            <div className="contacts__item">
+                                <img className="contacts__img" src="images/vk.png" alt="vk"></img>
+                                <a className="link contacts__link" href="https://vk.com/dizianty">Социальная сеть: VK</a>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        });
+        ReactDOM.render(
+            <Router history={hashHistory}>
+                <Route path="/" component={App}>
+                    <IndexRoute component={Home}/>
+                    <Route path="abilities" component={Abilities} />
+                    <Route path="contacts" component={Contacts} />
+                </Route>
+            </Router>,
+            destination
+        );
+    </script>
+</body>
+</html>
