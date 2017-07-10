@@ -82,7 +82,7 @@ body {
 
 @media screen and (max-width: 1235px){
     .menu__link{
-        padding: 2rem 4.5rem;
+        padding: 2rem 3.5rem;
     }
 }
 
@@ -293,7 +293,13 @@ a{
 }
 
 @media screen and (max-width: 700px){
-    .contacts__link{
-        font-size: 1.2rem;
+    .contacts__content{
+        flex-wrap: wrap;
+    }
+    .contacts__img{
+        width: 20%;
+    }
+    .contacts__item{
+        margin-bottom: 1rem;
     }
 }
