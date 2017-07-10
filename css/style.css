@@ -101,7 +101,7 @@ body {
 
 @media screen and (max-width: 1235px){
     .active{
-        background-color: #000;
+        background-color: inherit;
     }
 }
 
