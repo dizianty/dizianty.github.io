@@ -44,6 +44,7 @@ body {
 
 .title{
     font-weight: 400;
+    font-size: 4rem;
     margin: 0;
     text-align: center;
 }
@@ -112,7 +113,7 @@ body {
 }
 
 .section__title{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .section__content{
